@@ -69,3 +69,20 @@ Again, it's pretty simple.  It's not hard to decipher that this is telling nginx
 requests to `/one` should be passed to `http://localhost:8080/` (one of our little 
 python web servers).  On a real host, each of these proxy files would map a 
 particular path to an app running in a docker container.
+
+### Cleaning up
+
+When you're done looking at the example, stop & remove the container:
+
+`docker rm -f foo`
+
+and remove the image we created:
+
+`docker rmi foo`
+
+Finally, throw away the repository you cloned:
+
+```
+cd ..
+rm -rf docker-nginx
+```
