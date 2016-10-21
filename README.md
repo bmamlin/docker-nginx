@@ -86,3 +86,7 @@ Finally, throw away the repository you cloned:
 cd ..
 rm -rf docker-nginx
 ```
+
+## TODO
+
+* Update this to use docker-compose
